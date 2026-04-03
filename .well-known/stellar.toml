@@ -1,10 +1,31 @@
-# Stellar TOML for NexLab
+# File: stellar.toml - NexLab Anchor Service
+VERSION="2.0.0" # Nên dùng bản 2.0.0 để support đầy đủ các tính năng mới
 NETWORK_PASSPHRASE="Test SDF Network ; September 2015"
 
+# --- Authentication & Signing ---
+# Key dùng để ví verify identity của server mày
+SIGNING_KEY="GBJ2HOYPB2YJDKJ5RCALOZ3N4HKXQAQYVXBHV5LAWVE4NTVAUM2JJUZW"
+
+# Tài khoản phát hành (nếu mày tự phát hành asset) hoặc quản lý anchor
+ACCOUNTS=["GBJ2HOYPB2YJDKJ5RCALOZ3N4HKXQAQYVXBHV5LAWVE4NTVAUM2JJUZW"]
+
+# [[CURRENCIES]]
+# code="XLM"
+# issuer="GBJ2HOYPB2YJDKJ5RCALOZ3N4HKXQAQYVXBHV5LAWVE4NTVAUM2JJUZW"
+# display_decimals=7
+# name="Stellar Lumens"
+
 [[CURRENCIES]]
-code="XLM"
-issuer="GBJ2HOYPB2YJDKJ5RCALOZ3N4HKXQAQYVXBHV5LAWVE4NTVAUM2JJUZW"
+code="USDC"
+# Issuing Account chuẩn cho Sandbox (Testnet) theo tài liệu MoneyGram
+issuer="GBBD47IF6LWK7P7MDEVSCWR7DPUWV3NY3DTQEVFL4NAT4AQH3ZLLFLA5"
+is_asset_anchored=true
+anchor_asset_type="fiat"
+anchor_asset="USD"
+name="USD Coin"
+desc="USDC is a fully collateralized US Dollar stablecoin, tested in MoneyGram Sandbox."
 
 [DOCUMENTATION]
 ORG_NAME="NexLab"
-ORG_URL="https://thong442001.github.io"
+ORG_URL="https://thong442001.github.io/MoneyGram-XLM-testnet"
+ORG_DESCRIPTION="NexLab Wallet integration with MoneyGram Ramps"
