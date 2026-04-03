@@ -1,0 +1,13 @@
+# File này để MoneyGram biết ví NexLab là chính chủ
+NETWORK_PASSPHRASE="Test SDF Network ; September 2015"
+
+[[CURRENCIES]]
+code="XLM"
+issuer="GBJ2HOYPB2YJDKJ5RCALOZ3N4HKXQAQYVXBHV5LAWVE4NTVAUM2JJUZW" # Ví của Thống
+
+[QUOTES_INTERFACE]
+URL="https://your-free-domain.com" # Điền domain free của mày vào đây
+
+[DOCUMENTATION]
+ORG_NAME="NexLab"
+ORG_URL="https://your-free-domain.com"
