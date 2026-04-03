@@ -1,0 +1,11 @@
+{
+  "name": "moneygram-xlm-testnet",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "NexLab MoneyGram Integration",
+  "main": "index.js",
+  "dependencies": {
+    "@stellar/typescript-wallet-sdk": "^2.0.0",
+    "@stellar/stellar-sdk": "^15.0.1"
+  }
+}

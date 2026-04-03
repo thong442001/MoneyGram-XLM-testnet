@@ -27,5 +27,5 @@ desc="USDC is a fully collateralized US Dollar stablecoin, tested in MoneyGram S
 
 [DOCUMENTATION]
 ORG_NAME="NexLab"
-ORG_URL="https://thong442001.github.io/MoneyGram-XLM-testnet"
+ORG_URL="https://thong442001.github.io"
 ORG_DESCRIPTION="NexLab Wallet integration with MoneyGram Ramps"
